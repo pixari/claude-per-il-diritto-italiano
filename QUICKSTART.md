@@ -21,6 +21,10 @@ Guida rapida per la **prima installazione** e una prova in circa 10 minuti (solo
 
 Verifica che i plugin compaiano in `/plugin list` o nell’interfaccia plugin.
 
+**Attenzione:** `metodo-giuridico`, `checklist-licenziamento`, ecc. sono **skill**, non plugin.  
+Installa `diritto-italiano-hub@pixari-italian-legal-skills`, poi invoca `/diritto-italiano-hub:metodo-giuridico`.  
+Se vedi `not found`, leggi [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
 ### Claude Cowork / Desktop (ZIP)
 
 1. Clona questo repository o scarica una release ZIP.

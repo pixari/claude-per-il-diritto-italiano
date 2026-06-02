@@ -41,13 +41,13 @@ Repository: [github.com/pixari/claude-per-il-diritto-italiano](https://github.co
 ## Installazione rapida
 
 1. Installa [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
-2. Nel progetto o globalmente, aggiungi il marketplace:
+2. Aggiungi il marketplace (repo GitHub):
 
 ```text
 /plugin marketplace add pixari/claude-per-il-diritto-italiano
 ```
 
-3. Installa hub + plugin di interesse:
+3. Installa i **plugin** (non i singoli skill — vedi sotto):
 
 ```text
 /plugin install diritto-italiano-hub@pixari-italian-legal-skills
@@ -56,8 +56,19 @@ Repository: [github.com/pixari/claude-per-il-diritto-italiano](https://github.co
 /plugin install privacy-gdpr@pixari-italian-legal-skills
 ```
 
-4. Configura il profilo: `/diritto-italiano-hub:cold-start-interview`
-5. Leggi [QUICKSTART.md](QUICKSTART.md) e prova un fascicolo in `testatti/`.
+Il suffisso `@pixari-italian-legal-skills` è il **nome del marketplace**, non del repository.
+
+4. **Usa** uno skill (dopo aver installato il plugin che lo contiene):
+
+```text
+/diritto-italiano-hub:metodo-giuridico
+/lavoro:qa-rapida-lavoro
+```
+
+5. Configura il profilo: `/diritto-italiano-hub:cold-start-interview`
+6. Problemi? → [TROUBLESHOOTING.md](TROUBLESHOOTING.md) (errore `not found` = quasi sempre skill installato al posto del plugin).
+
+Leggi anche [QUICKSTART.md](QUICKSTART.md) e prova un fascicolo in `testatti/`.
 
 **Claude Cowork / Desktop:** scarica o crea uno ZIP del plugin e caricalo da *Customize → Plugins* (vedi QUICKSTART).
 

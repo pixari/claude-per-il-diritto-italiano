@@ -1,14 +1,11 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "pixari-italian-legal-skills",
-  "description": "⚠️ Raccolta sperimentale di skill per il diritto italiano (civile, lavoro, privacy/GDPR, hub metodo/citazione). Nessuna consulenza legale. Contenuti originali; non contiene testi di legge.",
   "owner": {
     "name": "pixari"
   },
   "plugins": [
     {
       "name": "diritto-italiano-hub",
-      "displayName": "Diritto italiano — Hub",
       "source": "./diritto-italiano-hub",
       "description": "Metodo giuridico, citazione italiana, avvertenze, cold-start per profilo studio e template per nuovi skill. Da installare insieme agli altri plugin.",
       "author": {
@@ -18,7 +15,6 @@
     },
     {
       "name": "diritto-civile",
-      "displayName": "Diritto civile",
       "source": "./diritto-civile",
       "description": "Subsunzione civile e revisione bozza contratti B2B (clausole critiche, 1341-1342 c.c.). Output sempre bozza.",
       "author": {
@@ -28,7 +24,6 @@
     },
     {
       "name": "lavoro",
-      "displayName": "Diritto del lavoro",
       "source": "./lavoro",
       "description": "Checklist licenziamento (rito lavoro) e Q&A rapida su rapporto di lavoro. Verifica norme e giurisprudenza sulle fonti dello studio.",
       "author": {
@@ -38,7 +33,6 @@
     },
     {
       "name": "privacy-gdpr",
-      "displayName": "Privacy e GDPR",
       "source": "./privacy-gdpr",
       "description": "Bozza risposta esercizio diritti (artt. 15-22 GDPR) e checklist clausole privacy nei contratti (art. 28).",
       "author": {
