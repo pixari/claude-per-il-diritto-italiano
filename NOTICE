@@ -1,0 +1,15 @@
+Claude per il diritto italiano — pixari
+
+This repository provides experimental Claude Code plugins and skills for Italian
+legal workflows. It does NOT provide legal advice, verified statutes, or case law
+databases.
+
+NO WARRANTY: All skills and outputs are drafts for review by a qualified professional.
+Authors and contributors disclaim liability for reliance on generated content.
+
+NOT LEGAL ADVICE: Use is at your own risk. Compliance with professional secrecy
+(art. 622 c.p., CNF deontology), l. 247/2012, GDPR, D.Lgs. 196/2003, EU AI Act,
+and mandate-specific rules must be assessed by the user.
+
+Concept inspired by Anthropic claude-for-legal and Klotzkette claude-fuer-deutsches-recht
+(plugin architecture only). All Italian skill text is original.
