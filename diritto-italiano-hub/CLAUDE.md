@@ -1,25 +1,52 @@
-# Profilo studio — diritto italiano
+# Profilo studio — hub (esempio compilabile)
 
-<!-- Compilato da /diritto-italiano-hub:cold-start-interview. Non sostituisce policy interne. -->
+> Sostituire con `/diritto-italiano-hub:cold-start-interview`. Valori sotto **fittizi**.
 
 ## Identità
 
-- Studio / organizzazione: (da compilare)
-- Materie principali: (es. civile, lavoro, privacy)
-- Riti usuali: (es. civile ordinario, giudizio del lavoro)
+- Organizzazione: Studio Rossi & Associati (fittizio)
+- Utenti tipici: 4 soci, 12 associate, legale interno M&A clienti
+- Lingua: italiano tecnico; note cliente in tono semplice
 
-## Stile e fonti
+## Materie e riti
 
-- Citazioni: estremi completi, data di vigore, Cass./merito con [da verificare] se non verificate live
-- Lingua atti: italiano formale
-- Playbook interno: (path o sintesi se l’utente la fornisce)
+| Materia | Rito | Priorità |
+| --- | --- | --- |
+| Civile contratti | Ordinario / mediazione | Alta |
+| Lavoro contenzioso | Giudizio del lavoro | Media |
+| Privacy committenti | Amministrativo/Garante | Media |
+| Amministrativo | TAR `[da verificare]` | Bassa (escalation) |
 
-## Calibrazione rischio
+## Stile citazioni e fonti
 
-- Output sempre **bozza** per revisione professionale
-- Escalation a socio per: (da compilare)
+- Cass.: estremi completi o `[da verificare]`
+- Database: DeJure (nome solo, no credenziali in file)
+- UE: EUR-Lex per regolamenti
+
+## Playbook e red lines
+
+- Contratti: penale >25% fee annua → escalation socio
+- Licenziamenti art. 18 → sempre socio
+- DSAR con dati sanitari → DPO entro 24h
+
+## Escalation
+
+| Trigger | Azione |
+| --- | --- |
+| Sanzioni penali | Penalista esterno |
+| Class action / gruppo | Comitato soci |
+| AI output su mandato reale | Revisione umana obbligatoria |
 
 ## Strumenti
 
-- Database / abbonamenti: (da compilare, senza credenziali in questo file)
-- Gestionale / PCT: (promemoria workflow only)
+- Fascicoli: cartelle locali + `/diritto-italiano-hub:fascicolo-mandato`
+- Test: `testatti/` only
+
+## Plugin collegati
+
+- `privacy-gdpr`, `lavoro`, `diritto-civile` — cold-start verticali se materia attiva
+
+## Note sessione
+
+- Ultimo aggiornamento playbook: (data cold-start)
+- v0.2 marketplace

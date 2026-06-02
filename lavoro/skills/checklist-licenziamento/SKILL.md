@@ -1,46 +1,49 @@
 ---
 name: checklist-licenziamento
-description: Checklist bozza per licenziamento e impugnazione (rito lavoro, termini, art. 18 st.lav. dove applicabile). Verificare norme vigenti. Nessuna consulenza legale.
-argument-hint: "[fatti: data assunzione, licenziamento, motivazione, dimensione azienda]"
+description: >
+  Checklist rapida licenziamento e impugnazione (rito lavoro, art. 18, termini).
+  Per screening iniziale; approfondimento con revisione-licenziamento.
+  Nessuna consulenza legale.
+argument-hint: "[fatti sintetici: data licenziamento, motivazione, n. dipendenti]"
 ---
 
-# Checklist licenziamento
+# Checklist licenziamento (quick path)
 
-> **Bozza — non consulenza legale.** Verificare norme, CCNL, giurisprudenza e vigore.
+> **Bozza — non consulenza legale.** Per analisi completa → `/lavoro:revisione-licenziamento`.
 
 ## Rito
 
-**Giudizio del lavoro** — promemoria termini impugnazione (verificare su fonti aggiornate `[da verificare]`).
+**Giudizio del lavoro** — termini impugnazione `[da verificare]` su fonti aggiornate.
 
-## Checklist strutturata
+## Checklist
 
-### 1. Rapporto
+### Rapporto
 
-- [ ] Tipologia contratto, livello, CCNL applicabile
-- [ ] Anzianità, periodo prova esaurito?
+- [ ] Contratto, CCNL, livello
+- [ ] Anzianità; periodo prova esaurito
 
-### 2. Licenziamento
+### Licenziamento
 
-- [ ] Forma (lettera, comunicazione)
-- [ ] Motivazione: giustificato motivo oggettivo/soggettivo, giusta causa — qualificare **bozza**
-- [ ] Dimensione impresa / soglie art. 18 st.lav. e d.lgs. 23/2015 — `[da verificare]`
-- [ ] Procedimento preventivo / contrattazione integrativa se dovuti
+- [ ] Tipologia motivazione (causa / g.m.o. / g.m.s.)
+- [ ] Soglie art. 18 / d.lgs. 23/2015
+- [ ] Procedimento preventivo se dovuto
 
-### 3. Termini
+### Termini
 
-- [ ] Data licenziamento → scadenze impugnazione (calcolo provvisorio, **verifica obbligatoria**)
-- [ ] Prescrizione azioni
+- [ ] Data comunicazione → scadenze (calcolo provvisorio)
+- [ ] Prescrizione
 
-### 4. Documenti
+### Documenti
 
-- [ ] Lettera, contratto, buste paga, cartellini, procedimenti disciplinari
+- [ ] Lettera, buste paga, disciplinari, email HR
 
-### 5. Strategia (bozza)
+### Esito quick
 
-- Opzioni: ricorso, transazione, alternative — solo come ipotesi da rivedere con professionista
+| Area | OK / Attenzione / Manca |
+| --- | --- |
+| Motivazione | |
+| Procedimento | |
+| Art. 18 | |
+| Termini | |
 
-## Output
-
-Checklist compilata con campi "OK / attenzione / dato mancante" e elenco documenti da richiedere.
-
-Non inventare sentenze Cass. lav.
+**Output:** checklist + "approfondire con revisione-licenziamento: sì/no"

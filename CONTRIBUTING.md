@@ -32,8 +32,9 @@ Grazie per l’interesse in **Claude per il diritto italiano**. Le contribuzioni
    - `name`: identificatore breve
    - `description`: massimo **1024 caratteri**, includere *Nessuna consulenza legale*
    - `argument-hint`: opzionale
-3. Esegui mentalmente `/diritto-italiano-hub:skills-qa` sulla bozza.
-4. PR con titolo: `[area] Aggiunge skill …`
+3. Skill **workflow** v0.2: corpo ≥ **100 righe**, workflow numerato, sezioni Output e Divieti.
+4. Esegui `/diritto-italiano-hub:skills-qa` sulla bozza.
+5. PR con titolo: `[area] Aggiunge skill …`
 
 ### Segnalare un problema
 

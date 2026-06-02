@@ -1,41 +1,100 @@
 ---
 name: avvertenze-legali
-description: Mostra avvertenze legali, limiti e obblighi di uso degli skill per il diritto italiano. Usare all'inizio sessione, prima di mandati reali, o quando l'utente chiede rischi, deontologia, GDPR, segreto professionale. Nessuna consulenza legale.
-argument-hint: "[opzionale: contesto es. studio, legale interno]"
+description: >
+  Avvertenze legali, limiti, deontologia, GDPR AI, segreto professionale.
+  Blocchi output obbligatori. Nessuna consulenza legale.
+argument-hint: "[contesto: studio|in-house|praticante]"
 ---
 
 # Avvertenze legali
 
-## Obbligatorio — ogni output
+## Blocco output obbligatorio
 
-Inizia ogni deliverable con:
+Ogni deliverable deve iniziare con:
 
-> **Bozza generata da skill sperimentale — non consulenza legale.** Verificare norme, giurisprudenza e vigore sulle fonti dello studio prima di ogni uso.
+```markdown
+> **Bozza generata da skill sperimentale — non consulenza legale.**
+> Verificare norme, giurisprudenza e vigore sulle fonti dello studio prima di ogni uso.
+```
 
-## Cosa è questo progetto
+Variante breve (solo se utente chiede compattezza):
 
-- Raccolta **sperimentale** di skill per workflow giuridici in Italia con Claude.
-- **Non** contiene testi di legge né banche dati nel repository.
-- **Non** sostituisce l'avvocato né produce pareri vincolanti.
+> **Bozza — non consulenza.** Verificare fonti.
 
-## Responsabilità dell'utente
+## Natura del progetto
 
-Prima di usare dati di mandato reali, l'utente deve valutare in autonomia:
-
-| Area | Promemoria |
+| Aspetto | Posizione |
 | --- | --- |
-| Segreto professionale | art. 622 c.p.; Codice deontologico forense (CNF) |
-| Professione forense | l. 247/2012; attività riservata |
-| Privacy | GDPR, d.lgs. 196/2003; DPA con fornitore AI; trasferimenti extra-UE |
-| AI Act | Reg. UE 2024/1689 |
-| Fonti | Verificare estremi, vigore, autenticità su database/abbonamenti dello studio |
+| Contenuto | Skill Markdown open source (MIT) |
+| Corpus legale | **Non** incluso nel repo |
+| Ruolo AI | Assistenza redazionale, non avvocato |
+| Versione | v0.2 — workflow estesi, ancora sperimentale |
 
-## Divieti
+## Responsabilità utente
 
-- Non incoraggiare upload di atti con dati reali identificabili in contesti pubblici (Issue, PR).
-- Non presentare output come "sicuro al 100%" o parere definitivo.
-- Non inventare numeri di sentenza: usare `[da verificare]`.
+| Area | Riferimento indicativo |
+| --- | --- |
+| Segreto professionale | art. 622 c.p.; deontologia CNF `[da verificare]` |
+| Professione | l. 247/2012 |
+| Privacy mandato | GDPR, d.lgs. 196/2003; DPIA fornitore AI |
+| AI Act | Reg. UE 2024/1689 `[da verificare]` |
+| Citazioni | Verifica su abbonamenti studio |
 
-## Riferimenti
+## Uso dati mandato
 
-Leggere [AVVERTENZE.md](https://github.com/pixari/claude-per-il-diritto-italiano/blob/main/AVVERTENZE.md) nel repository per il testo esteso.
+- **No** dati reali identificabili in Issue/PR pubbliche
+- Preferire `testatti/` fittizi per prove
+- Sessioni cloud: policy IT studio
+
+## Divieti del modello
+
+- Non "sicuro al 100%"
+- Non inventare sentenze
+- Non sostituire DPO/socio su decisioni consequential
+
+## Documenti repo
+
+- [AVVERTENZE.md](https://github.com/pixari/claude-per-il-diritto-italiano/blob/main/AVVERTENZE.md) — testo esteso
+- [NOTICE](https://github.com/pixari/claude-per-il-diritto-italiano/blob/main/NOTICE) — attribuzione EN/DE
+
+## Dopo lettura
+
+Proponi: configurare profilo con `/diritto-italiano-hub:cold-start-interview`
+
+## Appendice — Checklist finale sessione
+
+- [ ] Output inizia con disclaimer bozza / non consulenza
+- [ ] Norme e sentenze non verificate: `[da verificare]`
+- [ ] Escalation documentata se applicabile
+- [ ] Prossimi passi con responsabile (legale, DPO, HR)
+- [ ] Nessun dato reale di mandato in Issue/PR pubbliche
+
+## Appendice — Workflow collegati
+
+| Esigenza | Comando |
+| --- | --- |
+| Profilo studio | `/diritto-italiano-hub:cold-start-interview` |
+| Metodo e citazioni | `/diritto-italiano-hub:metodo-giuridico`, `citazione-italiana` |
+| Avvertenze | `/diritto-italiano-hub:avvertenze-legali` |
+| Fascicolo | `/diritto-italiano-hub:fascicolo-mandato` |
+
+## Appendice — Fonti (non in repo)
+
+Verificare su: Normattiva, EUR-Lex, garanteprivacy.it, database giuridici dello studio.
+
+## Appendice — Test
+
+Fascicoli fittizi in `testatti/` — personaggi inventati.
+
+## Appendice — Revisione umana
+
+Ogni bozza richiede revisione da professionista abilitato prima di invio, deposito o firma.
+
+## Appendice — Errori comuni (hub)
+
+- Output senza disclaimer iniziale
+- Sentenze citate senza estremi verificati
+- Incrociare metodo US/common law senza adattamento italiano
+- Fascicolo mandato con PII in nome cartella pubblica
+- Skill invocato senza plugin installato
+

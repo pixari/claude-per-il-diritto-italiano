@@ -60,7 +60,14 @@ claude plugin validate diritto-italiano-hub
 
 | Plugin da installare | Skill inclusi (esempi) |
 | --- | --- |
-| `diritto-italiano-hub` | `metodo-giuridico`, `citazione-italiana`, `avvertenze-legali`, `cold-start-interview` |
-| `diritto-civile` | `subsunzione-civile`, `revisione-contratto-b2b` |
-| `lavoro` | `checklist-licenziamento`, `qa-rapida-lavoro` |
-| `privacy-gdpr` | `bozza-risposta-esercizio-diritti`, `checklist-clausole-privacy-contratto` |
+| `diritto-italiano-hub` | `metodo-giuridico`, `fascicolo-mandato`, `personalizzazione-playbook`, … |
+| `diritto-civile` | `revisione-contratto-b2b`, `revisione-nda`, `revisione-contratto-saas`, … |
+| `lavoro` | `revisione-licenziamento`, `hiring-review-lavoro`, `fascicolo-lavoro`, … |
+| `privacy-gdpr` | `risposta-diritti-interessato`, `revisione-dpa`, `triage-trattamento`, … (v0.2) |
+
+### Skill rinominati in v0.2
+
+| v0.1 (non più valido) | v0.2 |
+| --- | --- |
+| `bozza-risposta-esercizio-diritti` | `risposta-diritti-interessato` |
+| `checklist-clausole-privacy-contratto` | `revisione-dpa` |

@@ -1,7 +1,7 @@
 {
   "name": "privacy-gdpr",
-  "version": "0.1.0",
-  "description": "GDPR e Codice privacy: risposte interessati, checklist contratti art. 28. Bozze only.",
+  "version": "0.2.0",
+  "description": "GDPR: DSAR, DPA, DPIA, violazioni, triage, gap e policy. Bozze only.",
   "author": {
     "name": "pixari"
   }

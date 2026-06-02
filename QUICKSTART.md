@@ -1,15 +1,8 @@
-# Quickstart
+# Quickstart v0.2
 
-Guida rapida per la **prima installazione** e una prova in circa 10 minuti (solo dati fittizi).
-
-## Prerequisiti
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installato e funzionante
-- Account Anthropic (o provider compatibile configurato da te)
+Prima installazione e **tre prove** (~30 minuti) con dati **solo fittizi**.
 
 ## Installazione
-
-### Claude Code (marketplace)
 
 ```text
 /plugin marketplace add pixari/claude-per-il-diritto-italiano
@@ -19,62 +12,65 @@ Guida rapida per la **prima installazione** e una prova in circa 10 minuti (solo
 /plugin install privacy-gdpr@pixari-italian-legal-skills
 ```
 
-Verifica che i plugin compaiano in `/plugin list` o nell’interfaccia plugin.
+Errore `not found`? → [TROUBLESHOOTING.md](TROUBLESHOOTING.md) (installare **plugin**, invocare **skill**).
 
-**Attenzione:** `metodo-giuridico`, `checklist-licenziamento`, ecc. sono **skill**, non plugin.  
-Installa `diritto-italiano-hub@pixari-italian-legal-skills`, poi invoca `/diritto-italiano-hub:metodo-giuridico`.  
-Se vedi `not found`, leggi [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
-
-### Claude Cowork / Desktop (ZIP)
-
-1. Clona questo repository o scarica una release ZIP.
-2. Comprimi una cartella plugin (es. `lavoro/`) se l’interfaccia richiede un singolo plugin per file.
-3. In *Customize → Plugins / Skills*, carica lo ZIP.
-4. Ripeti per `diritto-italiano-hub` (consigliato per primo).
-
-## Configurazione profilo (5 minuti)
+## Configurazione (10 min)
 
 ```text
 /diritto-italiano-hub:avvertenze-legali
 /diritto-italiano-hub:cold-start-interview
+/privacy-gdpr:cold-start-privacy
+/lavoro:cold-start-lavoro
+/diritto-civile:cold-start-civile
 ```
 
-Rispondi alle domande; verrà aggiornato `diritto-italiano-hub/CLAUDE.md` nel workspace.
+## Percorso 1 — Privacy (~10 min)
 
-## Prova in 10 minuti — fascicolo fittizio
-
-1. Apri la cartella [`testatti/licenziamento-fittizio/`](testatti/licenziamento-fittizio/) nel workspace.
-2. Leggi `README.txt` nel fascicolo (personaggi inventati).
-3. Esegui:
+1. Apri `testatti/privacy-fittizio/01_richiesta_accesso_DSAR.md`
+2. Esegui:
 
 ```text
-/lavoro:checklist-licenziamento
+/privacy-gdpr:risposta-diritti-interessato
 ```
 
-Incolla o riassumi i fatti dal file `01_timeline_fatti.md` (solo dati fittizi).
+3. Prova `02_bozza_DPA_commessa.md` con `/privacy-gdpr:revisione-dpa`
+4. Verifica: disclaimer, `[da verificare]`, nessuna sentenza inventata
 
-4. Controlla che l’output:
-   - Inizi con **bozza / non consulenza**
-   - Usi `[da verificare]` sulle norme non verificate live
-   - Non inventi sentenze con numero preciso
+## Percorso 2 — Lavoro (~10 min)
 
-### Prova civile (opzionale)
+1. Apri `testatti/licenziamento-fittizio/`
+2. Esegui:
+
+```text
+/lavoro:revisione-licenziamento
+```
+
+(incolla fatti da `01_timeline_fatti.md` e lettera `02_lettera_licenziamento.md`)
+3. Opzionale: `/lavoro:indagine-interna-disciplinare` con `04_verbale_audizione.md`
+
+## Percorso 3 — Civile (~10 min)
+
+1. Apri `testatti/contratto-b2b-fittizio/`
+2. Esegui:
 
 ```text
 /diritto-civile:revisione-contratto-b2b
 ```
 
-Usa i file in `testatti/contratto-b2b-fittizio/`.
+ruolo committente
+3. Opzionale NDA: `testatti/nda-fittizio/` + `/diritto-civile:revisione-nda`
 
 ## Comandi utili
 
 | Comando | Uso |
 | --- | --- |
+| `/diritto-italiano-hub:fascicolo-mandato` | Struttura cartella mandato |
 | `/diritto-italiano-hub:metodo-giuridico` | Analisi strutturata |
-| `/diritto-italiano-hub:citazione-italiana` | Regole citazione |
-| `/diritto-italiano-hub:skills-qa` | Checklist prima di una PR |
+| `/privacy-gdpr:triage-trattamento` | Nuovo trattamento dati |
+| `/diritto-italiano-hub:skills-qa` | Checklist prima di PR |
 
 ## Prossimi passi
 
-- Leggi [AVVERTENZE.md](AVVERTENZE.md) prima di usare documenti di mandato reali.
-- Contribuisci con [CONTRIBUTING.md](CONTRIBUTING.md).
+- [AVVERTENZE.md](AVVERTENZE.md) prima di mandati reali
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [CHANGELOG.md](CHANGELOG.md)

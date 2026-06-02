@@ -1,54 +1,114 @@
 ---
 name: metodo-giuridico
-description: Applica il metodo giuridico italiano (qualificazione, norma, subsunzione, conclusione) per atti di parte, pareri interni o note al cliente. Usare per analisi civile, lavoro, privacy. Diritto italiano only; no US common law. Nessuna consulenza legale.
-argument-hint: "[tipo: atto|parere|nota-cliente] [quesito o fatto sintetico]"
+description: >
+  Metodo giuridico italiano completo per atti, pareri, note cliente: qualificazione,
+  norma, subsunzione, prove, conclusioni. Integra fascicolo e citazioni.
+  Nessuna consulenza legale.
+argument-hint: "[tipo: atto|parere|nota-cliente|comparsa] [quesito]"
 ---
 
 # Metodo giuridico (Italia)
 
-## Obbligatorio
+> **Bozza — non consulenza legale.** Apri con `/diritto-italiano-hub:avvertenze-legali`.
 
-1. Leggi `CLAUDE.md` del profilo studio se presente.
-2. Dichiara **rito** e **tipo documento** richiesto.
-3. Apri con disclaimer bozza (vedi `avvertenze-legali`).
+## Setup
 
-## Evitare
+1. Leggi `diritto-italiano-hub/CLAUDE.md` e `CLAUDE.md` del plugin verticale se attivo
+2. Carica fascicolo se esiste (`/diritto-italiano-hub:fascicolo-mandato`)
+3. Dichiara **rito** e **tipo documento**
 
-- Struttura "brief" US, BGB/tedesco copiato senza adattamento.
-- Conclusioni come sentenza o parere definitivo.
+## Fase 1 — Qualificazione
 
-## Workflow
+- Fatto rilevante (solo da documenti utente)
+- Quesito giuridico e confini mandato
+- Domande all'utente (max 5 puntati) se dati mancanti
+- Profili giuridici concorrenti (es. contratto + 231 `[da verificare]`)
 
-### 1. Qualificazione
+## Fase 2 — Norma
 
-- Fatto rilevante e quesito.
-- Confini del mandato e dati mancanti (elenca domande all'utente).
+- Gerarchia: Cost., legge, d.lgs., reg. UE, contratto
+- Specialità / posteriorità — segnala conflitto, non risolvere in autonomia
+- Per norma: estremi + data vigore + `[da verificare]`
+- Applica `/diritto-italiano-hub:citazione-italiana`
 
-### 2. Norma
-
-- Individua fonti: Costituzione, legge, d.lgs., regolamento UE, contratto.
-- Gerarchia: promemoria su specialità, posteriorità, costituzionalità — **non** decidere conflitti in autonomia.
-- Per ogni norma: estremi + **data di vigore** + `[da verificare]` se non da fonte live.
-
-### 3. Subsunzione
+## Fase 3 — Subsunzione
 
 Per ogni elemento:
 
-- Fatto provato / da provare
-- Applicazione norma
-- Controargomenti
+| Elemento | Fatto provato / da provare | Norma | Pro / contro |
+| --- | --- | --- | --- |
 
-### 4. Conclusione (bozza)
+## Fase 4 — Prova e processo
 
-- Proposta operativa chiara.
-- Rischi e passi successivi (verifica fonti, deposito PCT, ecc.).
+- Onere della prova
+- Eccezioni preliminari se atto di parte `[da verificare]`
+- Prescrizione/decadenza — calcolo provvisorio
+- CTU / consulenza tecnica se utile
+
+## Fase 5 — Conclusioni (bozza)
+
+- Petitum o raccomandazioni operative
+- Alternative (transazione, mediazione)
+- Rischi e next steps
 
 ## Formati output
 
-| Tipo | Struttura |
-| --- | --- |
-| **Atto di parte** | Intestazione, in fatto, in diritto, conclusioni/petitum; eccezioni preliminari se il rito lo prevede |
-| **Parere interno** | Quesito, fatto, diritto, rischio, opzioni |
-| **Nota cliente** | Linguaggio accessibile, stesso disclaimer |
+### Atto di parte (civile ordinario)
 
-Non fornire consulenza al cittadino senza avvocato.
+1. Intestazione tribunale / parti / difensori
+2. In fatto (cronologia se disponibile)
+3. In diritto (per capo)
+4. Conclusioni e richiesta istruttoria
+5. Allegati e prova
+
+### Parere interno
+
+Quesito → Fatto → Diritto → Rischi → Opzioni
+
+### Nota cliente
+
+Linguaggio accessibile + disclaimer; poi `/diritto-civile:sintesi-cliente-stakeholder` se serve executive summary
+
+## Integrazione verticali
+
+| Materia | Skill specialistico |
+| --- | --- |
+| Civile | `/diritto-civile:subsunzione-civile` |
+| Lavoro | `/lavoro:revisione-licenziamento` |
+| Privacy | `/privacy-gdpr:risposta-diritti-interessato` |
+
+## Divieti
+
+- Struttura US brief / BGB non adattato
+- Conclusioni come sentenza definitiva
+- Consulenza al cittadino senza avvocato
+
+## Appendice — Checklist finale sessione
+
+- [ ] Output inizia con disclaimer bozza / non consulenza
+- [ ] Norme e sentenze non verificate: `[da verificare]`
+- [ ] Escalation documentata se applicabile
+- [ ] Prossimi passi con responsabile (legale, DPO, HR)
+- [ ] Nessun dato reale di mandato in Issue/PR pubbliche
+
+## Appendice — Workflow collegati
+
+| Esigenza | Comando |
+| --- | --- |
+| Profilo studio | `/diritto-italiano-hub:cold-start-interview` |
+| Metodo e citazioni | `/diritto-italiano-hub:metodo-giuridico`, `citazione-italiana` |
+| Avvertenze | `/diritto-italiano-hub:avvertenze-legali` |
+| Fascicolo | `/diritto-italiano-hub:fascicolo-mandato` |
+
+## Appendice — Fonti (non in repo)
+
+Verificare su: Normattiva, EUR-Lex, garanteprivacy.it, database giuridici dello studio.
+
+## Appendice — Test
+
+Fascicoli fittizi in `testatti/` — personaggi inventati.
+
+## Appendice — Revisione umana
+
+Ogni bozza richiede revisione da professionista abilitato prima di invio, deposito o firma.
+

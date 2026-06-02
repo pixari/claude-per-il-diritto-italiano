@@ -1,7 +1,7 @@
 {
   "name": "diritto-civile",
-  "version": "0.1.0",
-  "description": "Subsunzione civile e revisione bozza contratti B2B. Nessuna consulenza legale.",
+  "version": "0.2.0",
+  "description": "Contratti B2B, NDA, SaaS, subsunzione e contenzioso. Bozze only.",
   "author": {
     "name": "pixari"
   }

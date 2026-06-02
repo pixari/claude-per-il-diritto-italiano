@@ -1,15 +1,24 @@
 # diritto-italiano-hub
 
-Plugin trasversale: metodo, citazione, avvertenze, onboarding profilo studio.
+Metodo giuridico, citazioni, avvertenze, fascicolo mandato, QA skill. **Installare insieme** agli altri plugin.
 
-**Comandi utili**
+## Prima esecuzione
 
-| Comando | Funzione |
+```
+/diritto-italiano-hub:cold-start-interview
+/diritto-italiano-hub:avvertenze-legali
+```
+
+## Skill
+
+| Skill | Comando |
 | --- | --- |
-| `/diritto-italiano-hub:avvertenze-legali` | Ripete avvertenze e limiti |
-| `/diritto-italiano-hub:cold-start-interview` | Compila `CLAUDE.md` profilo |
-| `/diritto-italiano-hub:metodo-giuridico` | Workflow fatto-norma-subsunzione |
-| `/diritto-italiano-hub:citazione-italiana` | Regole citazione IT/UE |
-| `/diritto-italiano-hub:skills-qa` | Checklist qualità skill |
+| Cold-start studio | `/diritto-italiano-hub:cold-start-interview` |
+| Metodo giuridico | `/diritto-italiano-hub:metodo-giuridico` |
+| Citazione | `/diritto-italiano-hub:citazione-italiana` |
+| Avvertenze | `/diritto-italiano-hub:avvertenze-legali` |
+| Fascicolo mandato | `/diritto-italiano-hub:fascicolo-mandato` |
+| Personalizza playbook | `/diritto-italiano-hub:personalizzazione-playbook` |
+| QA skill (contributori) | `/diritto-italiano-hub:skills-qa` |
 
-Installare insieme agli altri plugin del marketplace `pixari-italian-legal-skills`.
+`skill-template` — solo per autori, non invocabile come workflow.

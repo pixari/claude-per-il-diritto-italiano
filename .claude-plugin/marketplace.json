@@ -1,5 +1,6 @@
 {
   "name": "pixari-italian-legal-skills",
+  "description": "Plugin giuridici italiani v0.2 per Claude Code: hub, civile, lavoro, privacy/GDPR. Bozze only.",
   "owner": {
     "name": "pixari"
   },
@@ -7,38 +8,38 @@
     {
       "name": "diritto-italiano-hub",
       "source": "./diritto-italiano-hub",
-      "description": "Metodo giuridico, citazione italiana, avvertenze, cold-start per profilo studio e template per nuovi skill. Da installare insieme agli altri plugin.",
+      "description": "Metodo giuridico, citazione, avvertenze, fascicolo mandato, cold-start studio, QA skill. v0.2.",
       "author": {
         "name": "pixari"
       },
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "diritto-civile",
       "source": "./diritto-civile",
-      "description": "Subsunzione civile e revisione bozza contratti B2B (clausole critiche, 1341-1342 c.c.). Output sempre bozza.",
+      "description": "Contratti B2B, NDA, SaaS, subsunzione, cronologia, sintesi stakeholder. v0.2.",
       "author": {
         "name": "pixari"
       },
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "lavoro",
       "source": "./lavoro",
-      "description": "Checklist licenziamento (rito lavoro) e Q&A rapida su rapporto di lavoro. Verifica norme e giurisprudenza sulle fonti dello studio.",
+      "description": "Hiring, disciplina, licenziamento, fascicolo, giudizio del lavoro. v0.2.",
       "author": {
         "name": "pixari"
       },
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "privacy-gdpr",
       "source": "./privacy-gdpr",
-      "description": "Bozza risposta esercizio diritti (artt. 15-22 GDPR) e checklist clausole privacy nei contratti (art. 28).",
+      "description": "DSAR, DPA, DPIA, triage, violazioni, gap privacy, monitoraggio informativa. v0.2.",
       "author": {
         "name": "pixari"
       },
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }
