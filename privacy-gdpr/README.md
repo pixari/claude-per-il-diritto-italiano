@@ -36,6 +36,8 @@ Compila `CLAUDE.md` (sistemi, processo DSAR, playbook DPA). La configurazione re
 | Violazione dati | `/privacy-gdpr:violazione-dati` |
 | Gap documentazione | `/privacy-gdpr:gap-normativo-privacy` |
 | Revisione informativa | `/privacy-gdpr:monitoraggio-informativa` |
+| Fascicolo matter | `/privacy-gdpr:fascicolo-privacy` |
+| Personalizza playbook | `/privacy-gdpr:personalizzazione-privacy` |
 
 ## Test (fittizi)
 

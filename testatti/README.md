@@ -16,6 +16,9 @@ Mandati **inventati** per provare i plugin senza segreti professionali.
 | [`contratto-b2b-fittizio/`](contratto-b2b-fittizio/) | `diritto-civile` | Commessa software, condizioni generali |
 | [`privacy-fittizio/`](privacy-fittizio/) | `privacy-gdpr` | DSAR, DPA, violazione dati |
 | [`nda-fittizio/`](nda-fittizio/) | `diritto-civile` | NDA B2B |
+| [`contenzioso-fittizio/`](contenzioso-fittizio/) | `contenzioso-civile` | Diffida, timeline |
+| [`assemblea-fittizia/`](assemblea-fittizia/) | `societario` | ODG assemblea |
+| [`ricorso-tar-fittizio/`](ricorso-tar-fittizio/) | `amministrativo` | Fatti ricorso |
 
 ## Uso
 

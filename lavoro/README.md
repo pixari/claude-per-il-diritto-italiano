@@ -28,6 +28,8 @@ Plugin per HR, legale interno e studi: assunzioni, disciplina, licenziamenti, gi
 | Q&A rapida | `/lavoro:qa-rapida-lavoro` |
 | Memo disciplinare | `/lavoro:bozza-memo-disciplinare` |
 | Fascicolo | `/lavoro:fascicolo-lavoro` |
+| Policy interna | `/lavoro:bozza-policy-interna` |
+| Qualificazione rapporto | `/lavoro:qualificazione-rapporto` |
 
 ## Test
 

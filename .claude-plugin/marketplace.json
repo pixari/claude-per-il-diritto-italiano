@@ -1,6 +1,5 @@
 {
   "name": "pixari-italian-legal-skills",
-  "description": "Plugin giuridici italiani v0.2 per Claude Code: hub, civile, lavoro, privacy/GDPR. Bozze only.",
   "owner": {
     "name": "pixari"
   },
@@ -8,38 +7,58 @@
     {
       "name": "diritto-italiano-hub",
       "source": "./diritto-italiano-hub",
-      "description": "Metodo giuridico, citazione, avvertenze, fascicolo mandato, cold-start studio, QA skill. v0.2.",
-      "author": {
-        "name": "pixari"
-      },
-      "version": "0.2.0"
-    },
-    {
-      "name": "diritto-civile",
-      "source": "./diritto-civile",
-      "description": "Contratti B2B, NDA, SaaS, subsunzione, cronologia, sintesi stakeholder. v0.2.",
-      "author": {
-        "name": "pixari"
-      },
-      "version": "0.2.0"
-    },
-    {
-      "name": "lavoro",
-      "source": "./lavoro",
-      "description": "Hiring, disciplina, licenziamento, fascicolo, giudizio del lavoro. v0.2.",
-      "author": {
-        "name": "pixari"
-      },
-      "version": "0.2.0"
+      "description": "Metodo, citazione, fascicolo mandato, cold-start, QA. v0.3.",
+      "author": { "name": "pixari" },
+      "version": "0.3.0"
     },
     {
       "name": "privacy-gdpr",
       "source": "./privacy-gdpr",
-      "description": "DSAR, DPA, DPIA, triage, violazioni, gap privacy, monitoraggio informativa. v0.2.",
-      "author": {
-        "name": "pixari"
-      },
-      "version": "0.2.0"
+      "description": "Privacy EN-parity: DSAR, DPA, DPIA, fascicolo matter. v0.3.",
+      "author": { "name": "pixari" },
+      "version": "0.3.0"
+    },
+    {
+      "name": "lavoro",
+      "source": "./lavoro",
+      "description": "Employment EN-parity: hiring, termination, policy, classification. v0.3.",
+      "author": { "name": "pixari" },
+      "version": "0.3.0"
+    },
+    {
+      "name": "diritto-civile",
+      "source": "./diritto-civile",
+      "description": "Commercial EN-parity: B2B, vendor, MSA, amendment, escalation. v0.4.",
+      "author": { "name": "pixari" },
+      "version": "0.4.0"
+    },
+    {
+      "name": "contenzioso-civile",
+      "source": "./contenzioso-civile",
+      "description": "Litigation EN-parity: fascicolo, comparsa, diffida, cautelare. v0.4.",
+      "author": { "name": "pixari" },
+      "version": "0.4.0"
+    },
+    {
+      "name": "societario",
+      "source": "./societario",
+      "description": "Corporate EN-parity: assemblee, statuto, patto soci. v0.5.",
+      "author": { "name": "pixari" },
+      "version": "0.5.0"
+    },
+    {
+      "name": "amministrativo",
+      "source": "./amministrativo",
+      "description": "Regulatory EN-parity: TAR, ADR PA, ricorsi. v0.5.",
+      "author": { "name": "pixari" },
+      "version": "0.5.0"
+    },
+    {
+      "name": "prodotto-servizi",
+      "source": "./prodotto-servizi",
+      "description": "Product/IP EN-parity lite: ToS, privacy sito, marchio. v0.6.",
+      "author": { "name": "pixari" },
+      "version": "0.6.0"
     }
   ]
 }

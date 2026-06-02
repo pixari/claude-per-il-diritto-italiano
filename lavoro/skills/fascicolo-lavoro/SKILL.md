@@ -8,7 +8,13 @@ argument-hint: "[nome fascicolo] [fase: intake|aggiornamento]"
 
 # Fascicolo lavoro
 
-> **Bozza — non consulenza legale.** Per struttura cartelle generica → `/diritto-italiano-hub:fascicolo-mandato`.
+> **Bozza — non consulenza legale.** Matter workspace EN `matter-workspace`.
+
+## Path persistente (doc)
+
+`~/.claude/plugins/config/pixari-italian-legal-skills/lavoro/matters/<slug>/`
+
+Cross-hub: `/diritto-italiano-hub:fascicolo-mandato`.
 
 ## Intake
 

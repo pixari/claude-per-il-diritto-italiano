@@ -77,6 +77,43 @@ Linguaggio accessibile + disclaimer; poi `/diritto-civile:sintesi-cliente-stakeh
 | Lavoro | `/lavoro:revisione-licenziamento` |
 | Privacy | `/privacy-gdpr:risposta-diritti-interessato` |
 
+## Appendice — Matter workspace (EN matter-workspace)
+
+Prima di analisi su mandato reale:
+
+1. `/diritto-italiano-hub:fascicolo-mandato` o fascicolo verticale (`fascicolo-privacy`, `fascicolo-civile`, `fascicolo-lavoro`)
+2. Carica solo documenti del matter attivo
+3. Registra in `matter.md` skill invocati e output in `bozze/`
+
+## Appendice — Esempio mini-output (parere)
+
+```markdown
+> Bozza — non consulenza legale.
+
+## Quesito
+…
+
+## Fatto (da documenti utente)
+…
+
+## Diritto
+- art. … c.c. [da verificare]
+
+## Rischi
+…
+
+## Opzioni
+1. …
+```
+
+## Appendice — Escalation hub
+
+| Trigger | Azione |
+| --- | --- |
+| Penale / criminale | Altro difensore |
+| Cross-border | Verifica foro e legge applicabile |
+| Urgenza cautelare | `/contenzioso-civile:triage-ricorso-cautelare` se installato |
+
 ## Divieti
 
 - Struttura US brief / BGB non adattato

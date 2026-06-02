@@ -106,6 +106,30 @@ Calcolo **provvisorio** — obbligo verifica su fonti:
 ## Raccomandazioni
 ```
 
+## Appendice — EN termination-review parity (checklist estesa)
+
+| Area EN | Copertura IT skill |
+| --- | --- |
+| High-risk flags | art. 18, tutele, gravidanza/maternità `[da verificare]` |
+| Documentation | cartella disciplinare completa |
+| Alternatives | transazione, concordato, rientro |
+| Client communication | memo per HR vs lettera dipendente |
+
+## Appendice — Comunicazione datore (bozza bullet)
+
+- Conferma motivazione scelta e coerenza con precedenti disciplinari
+- Verifica assistenza legale interna/esterna
+- Piano comunicazione uscita e accesso sistemi post-licenziamento
+
+## Appendice — Post-licenziamento
+
+| Task | Owner |
+| --- | --- |
+| TFR e documenti cessazione | HR |
+| Comunicazioni INPS | `[da verificare]` |
+| DSAR dipendente | `/privacy-gdpr:risposta-diritti-interessato` |
+| Fascicolo chiusura | `/lavoro:fascicolo-lavoro` |
+
 ## Divieti
 
 - Non consigliare al dipendente azioni senza avvocato

@@ -1,76 +1,42 @@
-# Quickstart v0.2
+# Quickstart (v0.6)
 
-Prima installazione e **tre prove** (~30 minuti) con dati **solo fittizi**.
-
-## Installazione
+## Install
 
 ```text
 /plugin marketplace add pixari/claude-per-il-diritto-italiano
 /plugin install diritto-italiano-hub@pixari-italian-legal-skills
-/plugin install diritto-civile@pixari-italian-legal-skills
-/plugin install lavoro@pixari-italian-legal-skills
 /plugin install privacy-gdpr@pixari-italian-legal-skills
+/plugin install lavoro@pixari-italian-legal-skills
+/plugin install diritto-civile@pixari-italian-legal-skills
+/plugin install contenzioso-civile@pixari-italian-legal-skills
 ```
 
-Errore `not found`? → [TROUBLESHOOTING.md](TROUBLESHOOTING.md) (installare **plugin**, invocare **skill**).
+(opzionale: `societario`, `amministrativo`, `prodotto-servizi`)
 
-## Configurazione (10 min)
+## Setup EN-style (15 min)
 
 ```text
 /diritto-italiano-hub:avvertenze-legali
 /diritto-italiano-hub:cold-start-interview
 /privacy-gdpr:cold-start-privacy
-/lavoro:cold-start-lavoro
-/diritto-civile:cold-start-civile
+/privacy-gdpr:fascicolo-privacy dsar-test-2026 dsar
 ```
 
-## Percorso 1 — Privacy (~10 min)
+## Percorsi test
 
-1. Apri `testatti/privacy-fittizio/01_richiesta_accesso_DSAR.md`
-2. Esegui:
+| Materia | Testatto | Matter + workflow |
+| --- | --- | --- |
+| Privacy | `testatti/privacy-fittizio/` | `fascicolo-privacy` → `risposta-diritti-interessato` |
+| Lavoro | `testatti/licenziamento-fittizio/` | `fascicolo-lavoro` → `revisione-licenziamento` |
+| Civile | `testatti/contratto-b2b-fittizio/` | `fascicolo-civile` → `revisione-contratto-b2b` |
+| Contenzioso | `testatti/contenzioso-fittizio/` | `fascicolo-contenzioso` → `bozza-diffida` |
+| Societario | `testatti/assemblea-fittizia/` | `verbale-assemblea-bozza` |
+| Amministrativo | `testatti/ricorso-tar-fittizio/` | `ricorso-tar-bozza` |
 
-```text
-/privacy-gdpr:risposta-diritti-interessato
-```
+## Verifica output
 
-3. Prova `02_bozza_DPA_commessa.md` con `/privacy-gdpr:revisione-dpa`
-4. Verifica: disclaimer, `[da verificare]`, nessuna sentenza inventata
+- Disclaimer bozza in testa
+- `[da verificare]` su norme non da fonte live
+- Nessuna sentenza inventata
 
-## Percorso 2 — Lavoro (~10 min)
-
-1. Apri `testatti/licenziamento-fittizio/`
-2. Esegui:
-
-```text
-/lavoro:revisione-licenziamento
-```
-
-(incolla fatti da `01_timeline_fatti.md` e lettera `02_lettera_licenziamento.md`)
-3. Opzionale: `/lavoro:indagine-interna-disciplinare` con `04_verbale_audizione.md`
-
-## Percorso 3 — Civile (~10 min)
-
-1. Apri `testatti/contratto-b2b-fittizio/`
-2. Esegui:
-
-```text
-/diritto-civile:revisione-contratto-b2b
-```
-
-ruolo committente
-3. Opzionale NDA: `testatti/nda-fittizio/` + `/diritto-civile:revisione-nda`
-
-## Comandi utili
-
-| Comando | Uso |
-| --- | --- |
-| `/diritto-italiano-hub:fascicolo-mandato` | Struttura cartella mandato |
-| `/diritto-italiano-hub:metodo-giuridico` | Analisi strutturata |
-| `/privacy-gdpr:triage-trattamento` | Nuovo trattamento dati |
-| `/diritto-italiano-hub:skills-qa` | Checklist prima di PR |
-
-## Prossimi passi
-
-- [AVVERTENZE.md](AVVERTENZE.md) prima di mandati reali
-- [CONTRIBUTING.md](CONTRIBUTING.md)
-- [CHANGELOG.md](CHANGELOG.md)
+Vedi [docs/CONNETTORI.md](docs/CONNETTORI.md).

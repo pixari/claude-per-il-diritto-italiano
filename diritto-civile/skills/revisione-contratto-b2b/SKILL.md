@@ -121,6 +121,31 @@ Se trattamento dati personali nel contratto:
 - [ ] Lista allegati da richiedere (bilanci, polizze, certificazioni)
 - [ ] Scadenza proposta firma
 
+## Appendice — Vendor review (EN vendor-agreement-review)
+
+| Tema fornitore/acquirente | Domanda chiave |
+| --- | --- |
+| SLAs consegna | Penali, cap |
+| Acceptance testing | UAT, rejection |
+| Indemnity IP | Titolarità custom |
+| Insurance | RCT, cyber se dati |
+| Change of control | Consenso |
+
+Per contratti pura fornitura → `/diritto-civile:revisione-fornitore`.
+
+## Appendice — Negoziazione (email bozza)
+
+```markdown
+Oggetto: Commenti bozza [contratto] — [data]
+- C-01: [clausola] — proposta: …
+- C-02: …
+Si richiede call per punti ad alta severity.
+```
+
+## Appendice — Matter
+
+Apri `/diritto-civile:fascicolo-civile` prima di revisioni multi-round.
+
 ## Divieti
 
 - Non certificare validità contratto

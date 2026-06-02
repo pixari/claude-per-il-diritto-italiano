@@ -19,6 +19,14 @@ Contratti B2B, NDA, SaaS, subsunzione e cronologie contenzioso. Output **bozza**
 | Subsunzione | `/diritto-civile:subsunzione-civile` |
 | Cronologia | `/diritto-civile:cronologia-contenzioso` |
 | Sintesi stakeholder | `/diritto-civile:sintesi-cliente-stakeholder` |
+| Fascicolo matter | `/diritto-civile:fascicolo-civile` |
+| Fornitore | `/diritto-civile:revisione-fornitore` |
+| MSA | `/diritto-civile:revisione-msa-fornitore` |
+| Amendment | `/diritto-civile:storico-amendment` |
+| Escalation | `/diritto-civile:escalation-clausole` |
+| Rinnovo | `/diritto-civile:rinnovo-contratto` |
+
+Lite contenzioso → plugin `contenzioso-civile`.
 
 ## Test
 

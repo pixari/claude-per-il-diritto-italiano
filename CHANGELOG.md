@@ -1,30 +1,46 @@
 # Changelog
 
+## [0.6.0] — prodotto-servizi
+
+- Nuovo plugin `prodotto-servizi` (EN `product-legal` + `ip-legal` lite): ToS, privacy sito, marchio, cold-start
+
+## [0.5.0] — societario + amministrativo
+
+- Plugin `societario` (EN `corporate-legal`): assemblee, statuto, patto soci, DD checklist
+- Plugin `amministrativo` (EN `regulatory-legal`): TAR, ADR PA, ricorsi
+- Testatti: `assemblea-fittizia/`, `ricorso-tar-fittizio/`
+
+## [0.4.0] — contenzioso + commercial
+
+- Plugin `contenzioso-civile` (EN `litigation-legal` subset): 8 skill
+- `diritto-civile`: `escalation-clausole`, `rinnovo-contratto`, `revisione-msa-fornitore`, `revisione-fornitore`, `storico-amendment`, `fascicolo-civile`
+- Testatti `contenzioso-fittizio/`
+
+## [0.3.0] — EN parity consolidation
+
+- Matter workspace: `fascicolo-privacy`, `fascicolo-civile`, `fascicolo-lavoro` (path config doc)
+- `personalizzazione-privacy`, `bozza-policy-interna`, `qualificazione-rapporto`
+- Flagship skills expanded (DSAR, licenziamento, B2B, metodo)
+- [docs/CONNETTORI.md](docs/CONNETTORI.md) (EN CONNECTORS)
+- CI: `.github/workflows/validate-plugins.yml`
+
 ## [0.2.0] — 2026-06-02
 
-### Added
-
-- **privacy-gdpr:** 8 skill workflow (DSAR, DPA, DPIA, triage, violazione, gap, monitoraggio, cold-start); fascicolo `testatti/privacy-fittizio/`
-- **lavoro:** 8 skill (revisione licenziamento, hiring, indagine, memo, fascicolo, cold-start); testatti licenziamento arricchiti
-- **diritto-civile:** 7 skill (B2B, NDA, SaaS, cronologia, sintesi, cold-start); `testatti/nda-fittizio/`
-- **diritto-italiano-hub:** `fascicolo-mandato`, `personalizzazione-playbook`; skill hub espansi
-- **CI:** workflow `validate-plugins.yml`
-- **CHANGELOG.md** e README plugin per verticale
-
-### Changed
-
-- Skill privacy rinominate: `risposta-diritti-interessato`, `revisione-dpa` (sostituiscono v0.1)
-- `CLAUDE.md` per plugin con playbook esempio compilabile
-- Marketplace e plugin version **0.2.0**
-
-### Migration
-
-| v0.1 | v0.2 |
-| --- | --- |
-| `/privacy-gdpr:bozza-risposta-esercizio-diritti` | `/privacy-gdpr:risposta-diritti-interessato` |
-| `/privacy-gdpr:checklist-clausole-privacy-contratto` | `/privacy-gdpr:revisione-dpa` |
+- Espansione 4 plugin (~30 skill), testatti privacy/nda
 
 ## [0.1.0] — 2026
 
-- Marketplace iniziale: hub, civile, lavoro, privacy (2 skill ciascuno verticale)
-- testatti licenziamento e contratto B2B
+- Marketplace iniziale
+
+### Benchmark EN (riferimento)
+
+| Verticale EN | Plugin IT | Da v |
+| --- | --- | --- |
+| legal-builder-hub | diritto-italiano-hub | 0.3 |
+| privacy-legal | privacy-gdpr | 0.3 |
+| employment-legal | lavoro | 0.3 |
+| commercial-legal | diritto-civile | 0.4 |
+| litigation-legal | contenzioso-civile | 0.4 |
+| corporate-legal | societario | 0.5 |
+| regulatory-legal | amministrativo | 0.5 |
+| product/ip-legal | prodotto-servizi | 0.6 |

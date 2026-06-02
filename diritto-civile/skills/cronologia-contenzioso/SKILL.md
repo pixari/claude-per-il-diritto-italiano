@@ -6,9 +6,9 @@ description: >
 argument-hint: "[carica atti/email/fatti] [nome fascicolo]"
 ---
 
-# Cronologia contenzioso
+# Cronologia contenzioso (contrattualistica / pre-contenzioso)
 
-> **Bozza — non consulenza legale.**
+> **Bozza — non consulenza legale.** Per lite in corso o giudiziale → `/contenzioso-civile:cronologia-contenzioso`.
 
 ## Input richiesti
 
